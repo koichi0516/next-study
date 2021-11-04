@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"./src/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "next": "12.0.2",
@@ -19,6 +20,7 @@
     "@types/react": "^17.0.34",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.2",
+    "prettier": "2.4.1",
     "typescript": "^4.4.4"
   }
 }
