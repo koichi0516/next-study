@@ -38,8 +38,8 @@ const Navbar = (props: any) => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('orange.100', '#20202380')}
-      // style={{ backdropFilter: 'blur(10px)' }}
+      // bg={useColorModeValue('orange.100', '#20202380')}
+      style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
     >
@@ -71,9 +71,6 @@ const Navbar = (props: any) => {
             <Menu>
               <MenuButton as={IconButton} icon={<HamburgerIcon />} />
               <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
